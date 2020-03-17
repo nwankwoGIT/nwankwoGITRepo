@@ -18,9 +18,9 @@ visualization. We shall start with looking at a simple example:
 
 ### R as a mathematical Calculator
 
-x <- 4    # define a variable x, and assign a value to it
-y <- 5    # define a variable y, and assign a value to it
-z <- x*y  # perform a multiplication and assign the result to variable z
-cat(z)    # print out the result to the console
+    x <- 4    # define a variable x, and assign a value to it
+    y <- 5    # define a variable y, and assign a value to it
+    z <- x*y  # perform a multiplication and assign the result to variable z
+    cat(z)    # print out the result to the console
 
-20
+    20
