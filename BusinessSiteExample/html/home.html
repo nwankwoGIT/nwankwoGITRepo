@@ -34,7 +34,7 @@
                          <a class="navbar-brand nav-link" href="#">Home</a>
                        </li>
                        <li class="nav-item">
-                         <a class="navbar-brand nav-link" href="#">Resources</a>
+                         <a class="navbar-brand nav-link" href="#">Free Resources</a>
                        </li>
                        <li class="nav-item">
                          <a class="navbar-brand nav-link" href="#">About</a>
@@ -190,19 +190,12 @@
               var script = document.createElement("script");
               script.type = "text/javascript";
               script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
-              document.getElementsByTagName("head")[0].appendChild(script);
-              /*
-              if (window.localStorage) {
-                $('textarea').on('input', function(e) {
-                var markdown = $('textarea').val()
-                localStorage.setItem('markdownStorage', markdown)
-              })
-              }
-            */
+              document.getElementsByTagName("head")[0].appendChild(script);  
               $("#btn0").click(function() {        
                 w3.includeHTML();
               });
-          })();
-          </script>
+  })();
+          
+        </script>
     </body>
 </html>
