@@ -1,0 +1,88 @@
+.sidenav {
+    height: 100%;
+    width: 120px;
+    position: fixed;
+    z-index: 1;
+    top: 50;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    color: #818181;
+    display: block;
+  }
+
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+  .main {
+    margin-left: 100px; /* Same as the width of the sidenav */
+    font-size: 14px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+  }
+
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 50px;}
+    .sidenav a {font-size: 14px;}
+  }
+  /* @media screen and (max-width: 900px) and (min-width: 600px), (min-width: 1100px) { */
+  @media screen and (max-width: 1200px) { 
+    .sidenav {padding-top: 50px;}
+    .sidenav a {font-size: 14px;}
+    .sidenav {display:none;}
+    .bottombar{display : none;}  /* remove bottom nav bar for small devices */
+    .main {
+        margin-left: 10px; /* reduce due to absence of sidenav which requires 100 px */
+        font-size: 12px; /* Increased text to enable scrolling */
+        padding: 0px 0px;
+      }
+
+  }        
+  header#siteName {
+      background-color: #242323;
+      color: #EFEFEF;
+  }
+  header {
+    padding: 20px 50px;
+    color:brown;          
+    background-color:"lightblue";
+    text-align: center;
+    border: darkblue;
+  } 
+  /*
+  #siteName {
+    width: auto;
+    height: 150px;
+    background-image: url(./css/360bridge.jpg);
+    background-repeat: repeat-x;
+    /* -- background-repeat: no-repeat; 
+  }
+  */
+  /* unvisited link */
+  a:link > h3 {
+    color: green;
+  }
+
+  /* visited link */
+  a:visited > *{
+    color: green;
+  }
+
+  /* mouse over link */
+  a[attr$='.html']:hover {
+    color: red;
+  }
+
+  /* selected link */
+  a[attr$='.html']:active {
+    color: yellow;
+  }
+ 
