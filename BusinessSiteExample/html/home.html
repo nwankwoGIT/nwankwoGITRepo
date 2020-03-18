@@ -19,7 +19,7 @@
         </style>
     </head>
     <body>
-        <div class="container">  
+         
         <main>            
              <br />
              <div class="row">
@@ -71,6 +71,7 @@
                  </div>
              
               <br/>
+
               <div class="jumbotron">         
                 <div  class="row justify-content-center">
                     
@@ -86,14 +87,24 @@
                   <h3>Tony's Business home page  ! </h3>
                   <p>This web site is primarily dedicated to hosting my tutorials on various technical subjects ranging from programming languages to engineering calculations.
                     All the tutorials require site registration in order to view them. Primary Languages covered are R, Python, C/C++, JavaScript (as in Node.js, React, WebPack). Please use the contact form to provide feedback. </p>
-              </div>
+              
+              
+                <div class="w3-panel w3-green" style="vertical-align: middle;">
+                  <p >You are not logged in</p> 
+                </div>             
+                <a class="btn btn-primary btn-lg" href="./login.html" role="button">Login</a>
+                <!--<p><a href="/accounts/login/">login</a></p> -->
+                <a class="btn btn-info btn-lg" href="./register.html" role="button">&#10004; Signup</a>
+                <!--<p><a href="/register/">Register</a></p> -->
+              
               </div>
             </div>  
+            </div>
         </div>  
         <hr>
         <div class="container">
             <header id="siteName">
-              <h1>Dashboard Of Tutorials</h1>
+              <h1>Dashboard</h1>
             </header> 
               <div class="row">        
                   <div class="col-md-6">
@@ -164,9 +175,7 @@
                    
                   </div>
               </div>
-              </div>
-                
-            </main> 
+              </div>                           
             <hr>
             <footer>     
                 <div class="container" id="Disclaimer">
@@ -175,7 +184,7 @@
                   </p>
                     </div>
               </footer>  
-            </div>  
+            </main>  
         <script>
             (function () {
               var script = document.createElement("script");
