@@ -1,14 +1,23 @@
 My name is Anthony Nwankwo and this is the Readme.md file for my GitHub,
 which is a markdown document. It contains the latest update to files in
-my project portfolio. The project is about providing a technical
-computing platform for users interesting in learning three frontline
-programming languages and leveraging such skills in generating technical
-solutions in various scientific fields.
+my project portfolio. This web site is dedicated to hosting my tutorials
+on how to integrate multiple programming languages to achieve technical
+solutions to computational tasks in various fields of engineering and
+science. All the tutorials require site registration. Primary Languages
+covered are R, Python, C/C++, JavaScript (as in Node.js, React,
+WebPack). Please use the contact form to provide feedback.
 
-Tutorials in R:
-===============
+User Stories
+============
 
-Development of the R Language was primarily motivated by the need to
+-   story number 1
+-   story number 2
+-   story number 3
+
+Overview of the R Language:
+===========================
+
+The Development of the R Language was primarily motivated by the need to
 develop a programming language that offers high productivity within the
 shortest possible time. The language has since expanded from handling
 statiscal analysis to data science which had been dominated by the
@@ -50,3 +59,17 @@ visualization. We shall start with looking at a simple example:
     cat(z)              # print out the result to the console
 
     TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE FALSE TRUE
+
+Overview of the Python Language:
+================================
+
+XXXXXXX The Development of the R Language was primarily motivated by the
+need to develop a programming language that offers high productivity
+within the shortest possible time. The language has since expanded from
+handling statiscal analysis to data science which had been dominated by
+the Python Language. R is holding its own in data filtering and
+visualization. We shall start with looking at a simple example:
+
+### Python as a mathematical Calculator
+
+### Handling Arrays in Python
