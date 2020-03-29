@@ -4,12 +4,13 @@
         <title>Project Home Page</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">        
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>      
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        
         <style type="text/css">
-            @import url("../css/mystyles.css");            
+            @import url("./css/mystyles.css");            
             .header > h5{
                 background-color:#c0c0c0 ;
                 color: #ffffff;
@@ -17,6 +18,30 @@
 
             }
         </style>
+        <script>    
+          function getDate() {
+                  var mydate=new Date();
+                  var year=mydate.getYear();
+                  if (year < 1000)
+                  year+=1900;
+                  var day=mydate.getDay();
+                  var month=mydate.getMonth();
+                  var daym=mydate.getDate();
+                  if (daym<10)
+                  daym="0"+daym;
+                  var dayarray=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+                  var montharray=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+                  return dayarray[day]+", "+montharray[month]+" "+daym+", "+year;
+          }
+        
+          function getYear() {
+                  var mydate=new Date();
+                  var year=mydate.getYear();
+                  if (year < 1000)
+                  year+=1900
+                  return year;
+          }  
+        </script>
     </head>
     <body>
          
@@ -32,25 +57,24 @@
                      <ul class="navbar-nav mr-auto">
                        <li class="nav-item active">
                          <a class="navbar-brand nav-link" href="#">Home</a>
-                       </li>
-                       <li class="nav-item active">
-                         <a class="navbar-brand nav-link" href="./python_RHTMLwithRMDBootstrap.html">Free Tutorials</a>
-                       </li>
+                       </li>                       
+                       
+                      <li class="nav-item active dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Free Tutorials
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="./python_RHTMLwithRMDBootstrap.html">R Language</a>
+                          <a class="dropdown-item" href="#">Python</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">C/C++</a>
+                        </div>
+                      </li>
+
                        <li class="nav-item active">
                          <a class="navbar-brand nav-link" href="#">About</a>
-                       </li>
-     
-                       <!--
-                       <li class="nav-item">
-                         <a class="navbar-brand nav-link" href="/handsontable/">HandsT</a>
-                       </li>
-                       <li class="nav-item">
-                         <a class="navbar-brand nav-link" href="/handsontable2/">HandsT2</a>
-                       </li>
-                       <li class="nav-item">
-                         <a class="navbar-brand nav-link" href="/rsite/">R Site</a>
-                       </li>
-                       -->
+                       </li> 
+                       
      
                        <li class="nav-item">
                          <a class="navbar-brand nav-link" href="#">Link</a>
@@ -72,13 +96,22 @@
              
               <br/>
 
+              <div class="sidenav">
+                <h5 style="text-align: center;">Outside Resources</h5>
+                <hr>                            
+                <a href="#" target="_self"><button type="button" class="btn-default form-control">RStudio</button> </a>
+                <a href="./PythonFree_page.html" target="_self"><button type="button" class="btn-default form-control ">Anaconda Python</button> </a>            
+                <a href="#" target="_self"><button type="button" class="btn-default form-control">C/C++17 Specification</button> </a>              
+                
+             </div>  
               <div class="jumbotron">         
                 <div  class="row justify-content-center">
-                    
+                       
                         <div class="container header">
                             <h5 style="text-align: center;"> The Indian Ocean Islands, Offshore Lumut, Malaysia </h5>
-                            <img src="./images/lumut.png" style="height:200px; width:100%"  class="img-fluid"  alt="The Indian Ocean Islands, Offshore Lumut, Malaysia">
-                            </div>
+                            <img src="../images/lumut.png" style="height:200px; width:100%"  class="img-fluid"  alt="The Indian Ocean Islands, Offshore Lumut, Malaysia">
+                         </div>
+                        
                         
                 <div class="col-12">
                 <hr class="mt-0 mb-4">                    
@@ -111,20 +144,20 @@
             </header> 
               <div class="row">        
                   <div class="col-md-6">
-                      <section>    
-                        <!--
+                      <section>   
+                        
                         <article id="planner">   
                         <a class="btn btn-default"
-                          href="./Personal_Planner.html" role="button"><h3>Personal Planner</h3></a>     
-                        <p>This is a simple planner app that helps you track your most importand todo-items which you encounter from day to day. It requires simple input of the 
-                          to-do description, the date of the year and the latest deadline to start working on the item. There will be a pop-up notification when the deadline approaces. There is a provision to display the linst of 
-                          active items </p>
+                          href="./_site_html/angular_todo.html" role="button"><h3>Personal Planner</h3></a>     
+                        <p>This is a simple planner app that helps you track your most importand todo-items which you encounter from day to day.                          active items </p>
                         </article> 
-                         -->
+                         <hr>
                         
                         <article id="rlang">                
-                        <a class="btn btn-default"
-                        href="./rlang.html" role="button"><h3>R Tutorials</h3></a>    
+                        <!-- <a class="btn btn-default" href="./rlang.html" role="button"><h3>R Tutorials</h3></a>  -->   
+                        <button style="margin-top: 10px;" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                          R Tutorials
+                        </button>    
                         <p> The R language is one of the best high productivity languages in the world. It is excellent in data science and data mining, statistical analysis, manipulation and solution of 
                            mathematical equations, solution of ordinary differential equations, powerful interface to Python and to a host of other languages and generation of web pages.</p>              
                         <p>
@@ -135,10 +168,12 @@
                            G = \frac{E}{2\left(1+\nu\right)}
                            \end{equation}
                         <p>Click this button to learn more about displaying equations in html</p>   
-                        <a class="btn btn-info btn-lg" href="#" role="button">Learn more</a>
+                        <a class="btn btn-info btn-lg" href="" role="button">Learn more</a>
                         <hr>
-                        <a class="btn btn-default"
-                          href="./clang.html" role="button"><h3>C/C++ Language</h3></a> 
+                        <!-- <a class="btn btn-default"  href="./clang.html" role="button"><h3>C/C++ Tutorials</h3></a>  -->
+                        <button style="margin-top: 10px;" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                          C/C++ Tutorials
+                        </button>  
                         <p> C/C++ is a very powerful programming language. I have been programming in C/C++ from the early days of C++ debut. The beauty of the language lies it's 
                           low level interface with the operating system. It is quite a difficult language to program in but the rewards are huge. C/C++ interfaces with many other 
                           languages like R, Node.js and Python. While it is very poor in graphic visualization, its computing power and speed can be exploited by interfaving it 
@@ -150,9 +185,11 @@
                   </div>
                   <div class="col-md-6">
                        <section>    
-                        <article id="python">   
-                        <a class="btn btn-default"
-                        href="./python.html" role="button"><h3>Python Tutorials</h3></a>                       
+                        <article id="python">  
+                       <!-- <a class="btn btn-default"  href="./python.html" role="button"><h3>Python Tutorials</h3></a>    -->
+                        <button style="margin-top: 10px;" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                          Python Tutorials
+                        </button>              
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce feugiat scelerisque nisi, sed sollicitudin eros volutpat consectetur. Sed quis interdum erat. Nunc vulputate metus eu enim hendrerit dignissim. Proin blandit, elit vel semper euismod, nunc sem varius mauris, a tempus tellus dolor ut leo. In a metus pulvinar, porttitor odio non, auctor risus. Ut et condimentum elit, a efficitur ex. Nulla pretium tortor sed lacinia lacinia. 
                           Sed pulvinar metus vel malesuada rhoncus. Sed at lacinia velit. Quisque vel metus nulla.</p>
                         </article> 
@@ -165,40 +202,71 @@
                         </article>
                         <hr>
                         <article id="Rea">                
-                          <a class="btn btn-default"
-                          href="./nodejs.html" role="button"><h3>Nodejs Tutorials</h3></a>    
+                          <!-- <a class="btn btn-default"  href="./nodejs.html" role="button"><h3>Nodejs Tutorials</h3></a>  --> 
+                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                            Nodejs Tutorials
+                          </button> 
                           <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
                             and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                           </article>
                         </section> 
                        <p>
                           <a class="btn btn-default"
-                          href="contact.html" role="button">
+                          href="./contact.html" role="button">
                           Contact us »
                           </a>
                       </p>
                    
                   </div>
               </div>
-              </div>                           
-            <hr>
+              </div>     
+             <!-- Button trigger modal -->
+          
+          <hr>
+        </main> 
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Message</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>Sorry, this module is still under development</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+              </div>
+            </div>
+          </div>
+            <div class="container">
+            <iframe style="border:none;" height="500px" width="100%" src="./Bootstrap_Carousel.html">
+            </iframe> 
             <footer>     
                 <div class="container" id="Disclaimer">
-                  <p style="float:left;padding-right:20px">
+                  <p style="align-content: center;padding-right:20px">
                     <script type="text/javascript">document.write(getYear());</script> &copy; www.kelecitex.com
                   </p>
                     </div>
               </footer>  
-            </main>  
+            </div>
         <script>
             (function () {
               var script = document.createElement("script");
               script.type = "text/javascript";
               script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
               document.getElementsByTagName("head")[0].appendChild(script);  
-              
+              $("#btn0").click(function() {        
+                w3.includeHTML();
+              });
   })();
           
-        </script>
-    </body>
+</script>
+
+  </body>
 </html>
