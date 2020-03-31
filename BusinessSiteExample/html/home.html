@@ -5,10 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">        
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> 
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>      
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">         
         <style type="text/css">
             @import url("../css/mystyles.css");            
             .header > h5{
@@ -18,30 +15,9 @@
 
             }
         </style>
-        <script>    
-          function getDate() {
-                  var mydate=new Date();
-                  var year=mydate.getYear();
-                  if (year < 1000)
-                  year+=1900;
-                  var day=mydate.getDay();
-                  var month=mydate.getMonth();
-                  var daym=mydate.getDate();
-                  if (daym<10)
-                  daym="0"+daym;
-                  var dayarray=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
-                  var montharray=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
-                  return dayarray[day]+", "+montharray[month]+" "+daym+", "+year;
-          }
-        
-          function getYear() {
-                  var mydate=new Date();
-                  var year=mydate.getYear();
-                  if (year < 1000)
-                  year+=1900
-                  return year;
-          }  
-        </script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>      
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>  
+        <script src="../js/functions_library.js"></script>
     </head>
     <body>
          
@@ -61,27 +37,27 @@
                        
                       <li class="nav-item active dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Free Tutorials
+                          Drop Down
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                           <a class="dropdown-item" href="./python_RHTMLwithRMDBootstrap.html">R Language</a>
                           <a class="dropdown-item" href="#">Python</a>
                           <div class="dropdown-divider"></div>
-                          <a class="dropdown-item" href="#">C/C++</a>
+                          <a class="dropdown-item" href="#" >C/C++</a>
                         </div>
                       </li>
-
+                      
                        <li class="nav-item active">
-                         <a class="navbar-brand nav-link" href="#">About</a>
+                         <a class="navbar-brand nav-link" href="./contact.html">Contact Us</a>
                        </li> 
                        
      
                        <li class="nav-item">
-                         <a class="navbar-brand nav-link" href="#">Link</a>
+                         <a class="navbar-brand nav-link" href="#">About Us</a>
                        </li>
                        
                        <li class="nav-item">
-                         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Admin</a>
+                         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Admin Section</a>
                        </li>
                        
                      </ul>
@@ -245,6 +221,9 @@
             </div>
           </div>
             <div class="container">
+            <!--  if this brower supports the iframe srcdoc syntax, it will over-ride the src file that loads into the iframe else, the file is displayed
+            <iframe style="border:none;" height="500px" width="100%" srcdoc="<h3>I am inside iframe.</h3>" src="./Bootstrap_Carousel.html"> 
+             -->
             <iframe style="border:none;" height="500px" width="100%" src="./Bootstrap_Carousel.html">
             </iframe> 
             <footer>     
@@ -254,19 +233,15 @@
                   </p>
                     </div>
               </footer>  
-            </div>
-        <script>
-            (function () {
+            </div>                 
+                     
+        <script> 
+            $(document).ready(function(){ 
               var script = document.createElement("script");
               script.type = "text/javascript";
               script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
-              document.getElementsByTagName("head")[0].appendChild(script);  
-              $("#btn0").click(function() {        
-                w3.includeHTML();
-              });
-  })();
-          
-</script>
-
+              document.getElementsByTagName("head")[0].appendChild(script);                  
+         }); 
+      </script>        
   </body>
 </html>
