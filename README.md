@@ -1,11 +1,41 @@
+
+Project Owner:
+==============
+
 My name is Anthony Nwankwo and this is the Readme.md file for my GitHub,
 which is a markdown document. It contains the latest update to files in
-my project portfolio. This web site is dedicated to hosting my tutorials
+my project portfolio
+
+Overview/description of the project
+===================================
+
+This web site is dedicated to hosting my tutorials
 on how to integrate multiple programming languages to achieve technical
 solutions to computational tasks in various fields of engineering and
 science. All the tutorials require site registration. Primary Languages
 covered are R, Python, C/C++, JavaScript (as in Node.js, React,
-WebPack). Please use the contact form to provide feedback.
+WebPack). 
+
+Technologies Used: 
+==================
+
+HTML, CSS, JS files
+
+
+
+
+Ideas for future improvement
+============================
+
+-	Implement a server authentication such that only paid users are allowed access 
+	to the detailed parts of the tutorials. When a user first gets to the site, 
+	the free sections of the tutorial will be available while the button / links 
+	to other sections are grayed out until the user is authenticated
+-	Create several exercises that offers the user some multiple choice answers 
+	to test acquired skills 
+-	Implement an automatic logout scheme that monitors for prolonged idle time.
+	This will log out any user who stays idle for a maximum period of time. 
+
 
 User Stories
 ============
@@ -21,6 +51,8 @@ User Stories
 -   As an online user, I want to be able to see some example input forms
     where I can enter variable values and click a button to compute and
     display the result
+
+
 
 
 Overview of the R Language:
@@ -69,15 +101,11 @@ visualization. We shall start with looking at a simple example:
 
     TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE FALSE TRUE
 
-Overview of the Python Language:
-================================
 
-XXXXXXX The Development of the R Language was primarily motivated by the
-need to develop a programming language that offers high productivity
-within the shortest possible time. The language has since expanded from
-handling statiscal analysis to data science which had been dominated by
-the Python Language. R is holding its own in data filtering and
-visualization. We shall start with looking at a simple example:
+Other section headers ... work in progress 
+===================================
+
+### Overview of the Python Language:
 
 ### Python as a mathematical Calculator
 
